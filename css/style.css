@@ -16,7 +16,7 @@
 	.navbar-toggler .navbar-toggler-icon {
 
 	display: block !important;
-	background:url(../img/menu.png) 0 0 no-repeat;
+	
 	}
 
 	.navbar-toggler:focus {
@@ -343,15 +343,30 @@
 
 
 	#myVideo {
-		position: fixed;
+		/* position: fixed;
 		right: 0;
 		bottom: 0;
 		min-width: 100%;
 		min-height: 100%;
 		background-size: cover;
 
-		object-fit: cover;
+		object-fit: cover;*/
 		
+
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+
+		background-size: cover;
 	  }
 
 
@@ -505,7 +520,7 @@
 	}
 
 	.contact-informations h2{
-	font-size:29px;
+	font-size:27px;
 	font-family: 'Roboto', sans-serif;
 	text-align: right;
 	color: #fff;
@@ -1474,9 +1489,7 @@
 
 	@media only screen and (max-width: 1400px){
 
-		.main-navigation{
-			background-color: #ff0040;
-		}
+		
 
 		.contact-informations h1{
 			font-size:46px;
@@ -1587,10 +1600,6 @@
 
     @media (max-width: 1200px) {
 		
-
-		.main-navigation{
-			background-color: #04adf0;
-		}
 
 
 		.contact-informations h1{
@@ -1722,10 +1731,7 @@
 
     @media (max-width: 991px) {
 
-		
-		.main-navigation{
-			background-color: #3d910d;
-		}
+	
 
 		.header-features {
 			margin-top: 0;
@@ -1827,10 +1833,6 @@
     @media (max-width: 767.98px) {
 
 		
-			
-		.main-navigation{
-			background-color: #e614e6;
-		}
 
 		.steps {
 			display: block;
@@ -1879,11 +1881,6 @@
 
 	
 	@media (max-width: 575.98px) { 
-		
-				
-		.main-navigation{
-			background-color: #080808;
-		}
 
 
 		.steps {
@@ -2050,9 +2047,10 @@
 		}
 
 		.contact-informations h2 {
-			font-size: 17px;
+			font-size: 16px;
 			color: #fff;
 			margin-top: 80px;
+			text-align: left;
 		}
 
         .contact-form{
